@@ -1,0 +1,30 @@
+package variable;
+
+public class Player {
+
+	private String playerName;
+	private String playerCountry;
+	
+	public Player(){
+		System.out.println("default contructor");
+		playerCountry="india";
+	}
+	
+	public Player(String playerName) {
+		System.out.println("parameterized constructor");
+		this.playerName=playerName;
+		
+	}
+	
+	public String toString() {
+		return "Player = [name="+playerName+"country"+playerCountry+"]";
+		
+		
+	}
+
+	
+	public static void main(String[] args) {
+		Player p=new Player("virat");
+		System.out.println(p);
+	}
+}

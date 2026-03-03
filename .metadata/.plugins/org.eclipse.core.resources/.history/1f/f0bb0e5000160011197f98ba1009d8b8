@@ -1,0 +1,43 @@
+package variable;
+import java.util.Scanner;
+
+public class Constructor {
+
+	private int empId;
+	private String empName;
+	private float empSalary;
+	
+	public Constructor() {
+		System.out.println("default constructor");
+		empId=11;
+		empName="rojar";
+		empSalary=20000.10f;
+	}
+	
+	public Constructor(int id,String name,float sal) {
+		System.out.println("parametrized constructor");
+		empId=id;
+		empName=name;
+		empSalary=sal;
+	}
+	
+	public String toString() {
+		return "Employee = [id"+empId+" name="+empName+" salary="+empSalary+"]";
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	    Scanner s=new Scanner(System.in);
+	    System.out.println("enter id = ");
+	    int id=s.nextInt();
+	    System.out.println("enter name = ");
+	    String nm=s.next();
+	    System.out.println("enter salary = ");
+	    int sal=s.nextInt();
+		Constructor c =new Constructor();
+		
+		System.out.println(c);
+	}
+}

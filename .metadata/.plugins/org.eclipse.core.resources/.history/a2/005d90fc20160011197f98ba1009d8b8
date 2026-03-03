@@ -1,0 +1,36 @@
+package variable;
+
+public class Date {
+
+	private int dd,mm,yy;
+	
+	public Date(int d,int m,int y) {
+		dd=d;
+		mm=m;
+		yy=y;
+	}
+	public String toString() {
+		return "Date [dd=" + dd + ", mm=" + mm + ", yy=" + yy + "]";
+	}
+
+	public static void swapDates(Date d[]) {
+		System.out.println("in swap dates----");
+		
+		Date temp;
+		temp=d[0];
+		d[0]=d[1];
+		d[1]=temp;
+		
+	}
+	
+	public static void main(String[] args) {
+		Date d1=new Date(2,3,2026);
+		Date d2=new Date(3,3,2027);
+		Date d[]=new Date[2];
+		
+		System.out.println("before swapping===");
+		System.out.println("d1 ="+d1);
+		System.out.println("d2 ="+d2);
+		
+	}
+}

@@ -1,0 +1,20 @@
+package session3_3;
+
+public class Child extends Parent {
+
+	private int no;
+	
+	public Child()
+	{
+		System.out.println("in default const in child");
+	}
+	
+	public Child(int no)
+	{
+		System.out.println("in param const in child");
+		this.no=no;
+	}
+	public static void main(String[] args) {
+		Child c=new Child(10);
+	}
+}

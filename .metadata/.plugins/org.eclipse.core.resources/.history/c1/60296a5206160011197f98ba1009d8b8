@@ -1,0 +1,39 @@
+package variable;
+
+public class Student {
+
+	private int studId;
+	private String studName;
+	private static int count;
+ 
+	public Student( int studId,String studName) {
+		this.studName = studName;
+		this.studId = studId;
+		count++;
+	}
+
+	public static void getStudentCount() {
+		System.out.println("Count ="+count);
+	}
+	public String toString() {
+		return "Student [studName=" + studName + ", studId=" + studId + "]";
+	}
+	
+	static {
+		System.out.println("this is static block");
+		count=60;
+	}
+
+	public static void main(String[] args) {
+		System.out.println("this is main method");
+		System.out.println(count);
+		Student s1=new Student(1,"rojar");
+		
+		Student s2=new Student(2,"Nickson");
+		System.out.println(s1);
+		System.out.println(Student.count);
+		System.out.println(s2);
+		System.out.println(s2.count);
+	}
+
+}

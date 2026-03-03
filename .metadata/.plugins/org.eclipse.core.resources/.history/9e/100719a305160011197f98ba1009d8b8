@@ -1,0 +1,27 @@
+package variable;
+
+public class Student {
+
+	private int studId;
+	private String studName;
+	
+ 
+	public Student() {}
+	public Student( int studId,String studName) {
+		this.studName = studName;
+		this.studId = studId;
+	}
+
+	public String toString() {
+		return "Student [studName=" + studName + ", studId=" + studId + "]";
+	}
+
+	public static void main(String[] args) {
+		
+		Student s1=new Student(1,"rojar");
+		Student s2=new Student(2,"Nickson");
+		System.out.println(s1);
+		System.out.println(s2);
+	}
+
+}

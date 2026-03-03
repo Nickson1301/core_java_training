@@ -1,0 +1,14 @@
+package p1;
+
+public class A {
+ 
+	protected int no;
+	
+	public A() {
+		no=10;
+	}
+	
+	protected void getNo() {
+		System.out.println("NO ="+no);
+	}
+}

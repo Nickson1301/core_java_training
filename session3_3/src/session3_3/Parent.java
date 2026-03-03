@@ -1,0 +1,22 @@
+package session3_3;
+
+public class Parent {
+
+	private int no;
+	
+	public Parent()
+	{
+		System.out.println("in default constructor of parent");
+		no=100;
+	}
+	public Parent(int no)
+	{
+		System.out.println("in param constructor of parent");
+		this.no=no;
+		System.out.println(no);
+	}
+	
+	public int getNo() {
+		return no;
+	}
+}

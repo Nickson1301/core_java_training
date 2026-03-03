@@ -1,0 +1,49 @@
+package session3_3;
+
+public class Employee extends Object{
+
+	
+
+	private int empId;
+	private String empName;
+	
+	
+	public Employee(int empId, String empName) {
+		this.empId = empId;
+		this.empName = empName;
+	}
+	
+	
+	public boolean equals(Object o) {
+		Employee e=(Employee)o;
+		if((this.empId==e.empId)&& (this.empName.equals(e.empName)))
+		  return true;
+		else
+			return false;
+	}
+	
+	public String toString() {
+		return "Employee [empId=" + empId + ", empName=" + empName + "]";
+	}
+	
+	public int hashcode() {
+		return empId+1;
+	}
+
+	public static void main(String[] args) {
+		Employee e1=new Employee(1,"nick");
+		Employee e2=new Employee(2,"nickson");
+		
+		if(e1.equals(e2))
+		{
+			System.out.println("it is equal");
+		}
+		else
+		{
+			System.out.println("it is not equal");
+		}
+		System.out.println(e1.hashcode());
+		System.out.println(e2.hashcode());
+	}
+	
+}

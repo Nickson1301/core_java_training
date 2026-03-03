@@ -1,0 +1,19 @@
+package session3_3;
+
+public class B extends A {
+
+	public void m1() {
+		System.out.println("in m1 of B");
+	}
+	
+	public void m2() {
+		System.out.println("in m2 of B");
+	}
+	
+	public static void main(String[] args) {
+		A a=new B();
+		a.m1();
+		((B)a).m2();//downcasting the reference from super to sub
+		//if u want to call subclass specific method (polymorp ref)
+	}
+}

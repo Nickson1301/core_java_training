@@ -1,0 +1,27 @@
+package variable;
+import java.util.Scanner;
+
+public class Constructor {
+
+	private int empId;
+	private String empName;
+	private float empSalary;
+	
+	public Constructor() {
+		System.out.println("default constructor");
+		empId=11;
+		empName="rojar";
+		empSalary=20000.10f;
+	}
+	
+	public String toString() {
+		return "Employee = [id"+empId+" name="+empName+" salary="+empSalary+"]";
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		Constructor c =new Constructor();
+		
+	}
+}

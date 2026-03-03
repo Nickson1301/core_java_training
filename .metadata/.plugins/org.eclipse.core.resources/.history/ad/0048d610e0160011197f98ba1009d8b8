@@ -1,0 +1,29 @@
+package session3_3;
+
+public class Employee {
+
+	
+
+	private int empId;
+	private String empName;
+	
+	
+	public Employee(int empId, String empName) {
+		this.empId = empId;
+		this.empName = empName;
+	}
+	
+	public String toString() {
+		return "Employee [empId=" + empId + ", empName=" + empName + "]";
+	}
+
+	public static void main(String[] args) {
+		Employee e1=new Employee(1,"nick");
+		Employee e2=new Employee(1,"nick");
+		
+		if(e1.equals(e2))
+			System.out.println("equal");
+		else
+			System.out.println("not equal");
+	}
+}

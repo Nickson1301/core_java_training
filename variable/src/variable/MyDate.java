@@ -1,0 +1,25 @@
+package variable;
+import java.util.Scanner;
+
+public class MyDate {
+
+	private int dd,mm,yy;
+	
+	public void setDd(int d) {
+		dd=d;
+	}
+	public int getDd() {
+		return dd;
+	}
+	
+	public static void main(String args[]) {
+		Scanner s=new Scanner(System.in);
+		MyDate d=new MyDate();
+		System.out.print("Enter the day = ");
+		int day=s.nextInt();
+	    d.setDd(day);
+	    //System.out.println("day ="+d.getDd());
+	    int dd=d.getDd();
+	    System.out.println("day = "+dd);
+	}
+}

@@ -13,7 +13,10 @@ public class B extends A {
 	public static void main(String[] args) {
 		A a=new B();
 		a.m1();
-		((B)a).m2();//downcasting the reference from super to sub
+		((B)a).m2();
+		
+		
+		//downcasting the reference from super to sub
 		//if u want to call subclass specific method (polymorp ref)
 	}
 }

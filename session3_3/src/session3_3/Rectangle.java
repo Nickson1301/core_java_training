@@ -1,6 +1,6 @@
 package session3_3;
 
-public class Rectangle extends Shape{
+public class Rectangle{
 
 	private int len,br;
 
